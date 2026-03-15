@@ -629,19 +629,21 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 72px;
 }
 @media only screen and (min-width: 768px) {
   .footer-wrap-elements {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
+    row-gap: 0;
+    column-gap: 0;
   }
 }
 .footer-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 72px;
 }
 @media only screen and (min-width: 768px) {
   .footer-wrapper {
@@ -671,12 +673,14 @@ input {
     max-width: 264px;
   }
 }
-.footer-socials {
-  margin-bottom: 72px;
+@media only screen and (min-width: 768px) {
+  .footer-socials {
+    margin-right: auto;
+  }
 }
 @media only screen and (min-width: 1158px) {
   .footer-socials {
-    margin-right: auto;
+    margin-right: 80px;
   }
 }
 .socials-caption {
@@ -716,9 +720,14 @@ input {
   flex-direction: column;
   align-items: center;
 }
+@media only screen and (min-width: 768px) {
+  .footer-subscribe {
+    margin-top: 72px;
+  }
+}
 @media only screen and (min-width: 1158px) {
   .footer-subscribe {
-    margin-left: auto;
+    margin-top: 0;
   }
 }
 .footer-form-caption {
@@ -826,7 +835,6 @@ input {
   visibility: visible;
   transition-delay: 0ms;
 }
-
 .modal-window {
   position: absolute;
   top: 50%;
@@ -1040,13 +1048,24 @@ input {
 .mobile-menu.is-open {
   transform: translateX(0);
 }
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+.mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
 .mobile-menu-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
   border: none;
-  background-color: #fff;
+  background-color: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu-btn:hover .mobile-menu-icon,
@@ -1063,8 +1082,11 @@ input {
 .mobile-menu-icon {
   fill: #2f2f37;
 }
-.mobile-menu-nav {
+.mobile-menu-nav-wrapper {
   margin-bottom: auto;
+}
+.mobile-menu-nav {
+  /* margin-bottom: auto; */
 }
 .mobile-menu-item:not(:last-child) {
   margin-bottom: 40px;
