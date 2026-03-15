@@ -28,12 +28,20 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="container">
         <div class="header-wrapper">
-          <a class="logo logo-header" href="./index.html"
-            ><span class="accent-word">Web</span>Studio</a
-          >
+          <nav class="logo-nav">
+            <a class="logo logo-header" href="./index.html"
+              ><span class="accent-word">Web</span>Studio</a
+            >
+            <button class="mobile-menu-btn" type="button">
+              <svg class="mobile-menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </nav>
           <nav class="header-nav">
             <ul class="header-list">
               <li>
@@ -43,7 +51,7 @@
                 <a class="header-link" href="#portfolio">Portfolio</a>
               </li>
               <li>
-                <a class="header-link" href="">Contacts</a>
+                <a class="header-link" href="#">Contacts</a>
               </li>
             </ul>
           </nav>
@@ -142,10 +150,15 @@
             <li class="team-item">
               <img
                 class="worker-img"
-                src="./images/team1.jpg"
+                src="./images/teamworkers/teamworker1@1x.jpg"
+                srcset="
+                  ./images/teamworkers/teamworker1@1x.jpg 1x,
+                  ./images/teamworkers/teamworker1@2x.jpg 2x
+                "
                 alt="teamworker Product Designer"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-text-wrap">
                 <h3 class="worker-name">Mark Guerrero</h3>
@@ -185,10 +198,15 @@
             <li class="team-item">
               <img
                 class="worker-img"
-                src="./images/team2.jpg"
+                src="./images/teamworkers/teamworker2@1x.jpg"
+                srcset="
+                  ./images/teamworkers/teamworker2@1x.jpg 1x,
+                  ./images/teamworkers/teamworker2@2x.jpg 2x
+                "
                 alt="teamworker Frontend Developer"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-text-wrap">
                 <h3 class="worker-name">Tom Ford</h3>
@@ -228,10 +246,15 @@
             <li class="team-item">
               <img
                 class="worker-img"
-                src="./images/team3.jpg"
+                src="./images/teamworkers/teamworker3@1x.jpg"
+                srcset="
+                  ./images/teamworkers/teamworker3@1x.jpg 1x,
+                  ./images/teamworkers/teamworker3@2x.jpg 2x
+                "
                 alt="teamworker Marketer"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-text-wrap">
                 <h3 class="worker-name">Camila Garcia</h3>
@@ -271,10 +294,15 @@
             <li class="team-item">
               <img
                 class="worker-img"
-                src="./images/team4.jpg"
+                src="./images/teamworkers/teamworker4@1x.jpg"
+                srcset="
+                  ./images/teamworkers/teamworker4@1x.jpg 1x,
+                  ./images/teamworkers/teamworker4@2x.jpg 2x
+                "
                 alt="teamworker UI Designer"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-text-wrap">
                 <h3 class="worker-name">Daniel Wilson</h3>
@@ -324,10 +352,15 @@
               <div class="portfolio-img-wrapper">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio1.jpg"
+                  src="./images/portfolio/portfolio1@1x.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio1@1x.jpg 1x,
+                    ./images/portfolio/portfolio1@2x.jpg 2x
+                  "
                   alt="Banking app UI"
                   width="360"
                   height="300"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -344,10 +377,15 @@
               <div class="portfolio-img-wrapper">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio2.jpg"
+                  src="./images/portfolio/portfolio2@1x.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio2@1x.jpg 1x,
+                    ./images/portfolio/portfolio2@2x.jpg 2x
+                  "
                   alt="QR code payment"
                   width="360"
                   height="300"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -364,10 +402,15 @@
               <div class="portfolio-img-wrapper">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio3.jpg"
+                  src="./images/portfolio/portfolio3@1x.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio3@1x.jpg 1x,
+                    ./images/portfolio/portfolio3@2x.jpg 2x
+                  "
                   alt="App design mockup"
                   width="360"
                   height="300"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -384,10 +427,15 @@
               <div class="portfolio-img-wrapper">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio4.jpg"
+                  src="./images/portfolio/portfolio4@1x.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio4@1x.jpg 1x,
+                    ./images/portfolio/portfolio4@2x.jpg 2x
+                  "
                   alt="Driver using GPS navigation"
                   width="360"
                   height="300"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -404,10 +452,15 @@
               <div class="portfolio-img-wrapper">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio5.jpg"
+                  src="./images/portfolio/portfolio5@1x.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio5@1x.jpg 1x,
+                    ./images/portfolio/portfolio5@2x.jpg 2x
+                  "
                   alt="Lock screen UI"
                   width="360"
                   height="300"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -424,10 +477,15 @@
               <div class="portfolio-img-wrapper">
                 <img
                   class="portfolio-img"
-                  src="./images/portfolio6.jpg"
+                  src="./images/portfolio/portfolio6@1x.jpg"
+                  srcset="
+                    ./images/portfolio/portfolio6@1x.jpg 1x,
+                    ./images/portfolio/portfolio6@2x.jpg 2x
+                  "
                   alt="Girl with phone and earphones"
                   width="360"
                   height="300"
+                  loading="lazy"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -575,12 +633,79 @@
                 <use href="./images/icons.svg#icon-checkmark"></use>
               </svg>
             </span>
-            I accept the terms and conditions of the
-            <a class="order-link" href="#">Privacy Policy</a>
+            <span class="order-checkbox-text">
+              I accept the terms and conditions of the
+              <a class="order-link" href="#">Privacy Policy</a>
+            </span>
           </label>
           <button class="btn order-send-btn" type="submit">Send</button>
         </form>
       </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+      <button class="modal-close-btn" type="button">
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-nav">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link active" href="#">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="footer-socials-list mobile-social-list">
+        <li class="footer-socials-item">
+          <a href="#" class="footer-socials-link">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a href="#" class="footer-socials-link">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a href="#" class="footer-socials-link">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a href="#" class="footer-socials-link">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
