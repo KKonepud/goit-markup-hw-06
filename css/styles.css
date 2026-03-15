@@ -334,7 +334,8 @@ input {
   line-height: 1.11;
   text-align: center;
   color: #fff;
-  margin: 0 52px;
+  max-width: 216px;
+  margin: 0 auto;
   margin-bottom: 72px;
 }
 @media only screen and (min-width: 768px) {
@@ -673,6 +674,9 @@ input {
     max-width: 264px;
   }
 }
+.footer-socials {
+  text-align: center;
+}
 @media only screen and (min-width: 768px) {
   .footer-socials {
     margin-right: auto;
@@ -685,14 +689,13 @@ input {
 }
 .socials-caption {
   display: block;
-  justify-self: center;
   font-weight: 500;
   color: #fff;
   margin-bottom: 16px;
 }
 @media only screen and (min-width: 768px) {
   .socials-caption {
-    justify-self: start;
+    text-align: start;
   }
 }
 .footer-socials-list {
@@ -719,6 +722,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) {
   .footer-subscribe {
